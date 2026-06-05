@@ -43,12 +43,15 @@ Use this checklist after inspecting the implementation. Mark each item as confir
 - A direct definition or answer appears early.
 - H1 is unique and descriptive.
 - H2/H3 sections cover real subquestions.
+- Important definitions, explanations, comparisons, and facts retain meaning when extracted independently.
+- Important paragraphs put the subject and main conclusion before supporting detail.
 - Content contains original evidence, examples, methodology, research, or experience.
 - Authors/reviewers and dates are present where credibility depends on them.
 - Claims can be traced to a public or internal authoritative source.
 - Exact metrics include scope, denominator, time range, and methodology where needed.
 - Customer names, logos, awards, and partnerships are authorized.
 - Brand name, product name, category, audience, and core description are consistent across sources.
+- Owned profiles, documentation, feeds, and schema reinforce the same entity relationships as visible pages.
 - Old docs, staging sites, profiles, and third-party listings do not contradict the canonical entity.
 - Content avoids thin keyword variants and generic AI summaries.
 
@@ -98,8 +101,36 @@ Use this checklist after inspecting the implementation. Mark each item as confir
 - Machine-readable text pages are optional supplements, not the only source.
 - `llms.txt` uses canonical URLs and only verified facts.
 - Third-party profiles and references reinforce the same entity.
+- Relevant owned channels contain substantive, non-duplicative expertise or product evidence.
+- Authentic reviews, independent coverage, customer references, or credible directories provide earned corroboration.
+- No reviews, community posts, customer endorsements, or editorial mentions are fabricated.
 - GEO probes record exact query, model, date, brand mention, rank, framing, and cited sources.
+- GEO probes record locale, product/mode, competitor mentions, sentiment, and cited-source domains when available.
+- Retrieval-based visibility is not presented as proof of base-model training inclusion.
 - Missing model coverage is disclosed.
+
+## Technical Documentation GEO
+
+- Each priority page has one clear developer task, concept, or reference intent.
+- Task-oriented sections lead with the action, answer, command, or result.
+- Titles and descriptions identify the product, task, and version where relevant.
+- Headings are descriptive, logically nested, and aligned with real developer questions where useful.
+- Parameters document exact types, defaults, accepted values, ranges, and units.
+- Limits document time windows, boundary behavior, status codes, and errors.
+- Terminology is consistent across prose, navigation, code, OpenAPI, SDKs, and errors.
+- Current, deprecated, preview, and removed behavior is labeled accurately.
+- Versioned pages, migration guides, canonicals, redirects, and indexing policies are intentional.
+- Important code blocks declare the correct language and include required setup.
+- Representative examples are executable or clearly labeled as static/pseudocode.
+- Examples use correct endpoints, methods, headers, bodies, imports, and supported versions.
+- Expected output and important error handling are documented.
+- Diagrams and screenshots have equivalent textual explanations for essential information.
+- Public documentation is crawlable without exposing private, draft, or unsafe content.
+- `llms.txt` supplements canonical documentation and is not treated as a sitemap replacement or Google requirement.
+- AI crawler policies distinguish search retrieval, user-triggered access, and model-training use.
+- `Google-Extended` is not treated as a control for Google Search or AI Overviews.
+- AI answer tests check citation, version, code, limits, errors, security, and supported methods.
+- Documentation defects are distinguished from retrieval failures and model hallucinations.
 
 ## Measurement
 
@@ -109,7 +140,8 @@ Use this checklist after inspecting the implementation. Mark each item as confir
 - Impressions, clicks, CTR, position, conversions, and indexed pages tracked.
 - Rich result validity tracked.
 - Crawl/index errors reviewed after releases.
-- GEO visibility and citation share tracked separately from Google SEO.
+- GEO citation frequency, mention rate, competitor share of voice, context, sentiment, framing accuracy, and source diversity are tracked separately from Google SEO.
+- Prompt samples, platform coverage, volatility, and methodology limits are disclosed.
 
 ## Suggested Prioritization
 
@@ -117,4 +149,3 @@ Use this checklist after inspecting the implementation. Mark each item as confir
 - **P1:** materially weakens relevance, evidence, entity understanding, or discovery.
 - **P2:** improves appearance, CTR, rich results, and experience.
 - **P3:** expansion, experimentation, and long-term authority building.
-
