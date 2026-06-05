@@ -1,0 +1,4 @@
+interface:
+  display_name: "Google Search GEO & SEO"
+  short_description: "Audit and improve sites using Google Search guidance"
+  default_prompt: "Use $google-search-geo-seo to audit this site and implement prioritized GEO and SEO improvements."
