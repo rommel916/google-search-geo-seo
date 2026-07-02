@@ -1,4 +1,4 @@
 interface:
   display_name: "Google Search GEO & SEO"
-  short_description: "Audit Google SEO, docs, and AI visibility"
-  default_prompt: "Use $google-search-geo-seo to audit this site or documentation and implement prioritized Google SEO, entity, content, crawler, authority, and AI visibility improvements."
+  short_description: "Audit Google SEO, multi-platform visibility, and AI discovery"
+  default_prompt: "Use $google-search-geo-seo to audit this site or documentation and implement prioritized Google SEO, growth-and-visibility, entity, content, crawler, authority, landing-page UX, and AI visibility improvements."

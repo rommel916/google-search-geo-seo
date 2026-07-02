@@ -109,6 +109,51 @@ Use this checklist after inspecting the implementation. Mark each item as confir
 - Retrieval-based visibility is not presented as proof of base-model training inclusion.
 - Missing model coverage is disclosed.
 
+## GEO Content Structure (Research-Based)
+
+- Each page has one macro-level topic; the document hierarchy is logical from broad to specific.
+- Every section uses a TL;DR or direct-answer sentence under the heading so the heading + summary pair can stand alone.
+- Important paragraphs open with a direct answer (40–60 words) before adding context, evidence, and follow-up headings.
+- Each passage names its entities explicitly; no vague pronouns ("this", "as above") for important claims.
+- Claims are anchorable: named entity + stated relationship + preserved conditions + verifiable specifics.
+- Passage isolation test applied: each high-priority passage reads accurately without surrounding context.
+- Tables used for comparisons; bulleted lists for steps and attributes; not for narrative prose.
+- Statistics include source, date, denominator, and methodology.
+- Cornerstone pages have a visible "last updated" date.
+- Content has been refreshed when product behavior, pricing, procedures, or cited statistics have changed.
+
+## AI Crawler Access
+
+- `robots.txt` status checked for each AI crawler separately.
+- `OAI-SearchBot` (ChatGPT Search retrieval) — access decision is intentional.
+- `GPTBot` (OpenAI model training) — access decision is intentional and separate from search retrieval.
+- `PerplexityBot` (Perplexity retrieval) — access decision is intentional.
+- `ClaudeBot` (Anthropic retrieval) — access decision is intentional.
+- `Google-Extended` (Gemini training, not Google Search) — not used to control Google Search, AI Overviews, or AI Mode.
+- CDN, WAF, and server logs checked to confirm crawlers are not silently blocked at the infrastructure level.
+- Policies for search retrieval, model training, and user-triggered access are evaluated and documented separately.
+
+## Multi-Platform Discovery
+
+- Priority audience discovery channels are identified and justified.
+- Google keyword/topic research is mapped to at least one additional channel when that channel matters to the audience.
+- YouTube, LinkedIn, Reddit, TikTok, or Instagram presence is substantive where recommended, not thin duplicate spam.
+- Owned social/video content uses platform-appropriate keyword placement in titles, captions, scripts, bios, or alt text where relevant.
+- Reddit or community participation is authentic and relevant, not astroturfed.
+- LinkedIn authorship or company profiles reinforce E-E-A-T where expertise matters.
+- Referral traffic from non-Google discovery surfaces is measurable when analytics access exists.
+- Cross-channel insights are shared back into site content and keyword planning.
+
+## Growth, UX, and Conversion
+
+- Key SEO landing pages load quickly and work on mobile.
+- Landing pages match the query or campaign intent.
+- Primary conversion paths are obvious and usable.
+- Driving traffic to broken, misleading, or low-converting pages is flagged as a growth risk.
+- Branded search demand is tracked where possible.
+- Assisted conversions and downstream funnel impact are considered, not only last-click organic sessions.
+- Traffic velocity for new or refreshed content is noted when baselines exist.
+
 ## Technical Documentation GEO
 
 - Each priority page has one clear developer task, concept, or reference intent.
@@ -140,12 +185,19 @@ Use this checklist after inspecting the implementation. Mark each item as confir
 - Impressions, clicks, CTR, position, conversions, and indexed pages tracked.
 - Rich result validity tracked.
 - Crawl/index errors reviewed after releases.
-- GEO citation frequency, mention rate, competitor share of voice, context, sentiment, framing accuracy, and source diversity are tracked separately from Google SEO.
+- Branded search demand tracked where available.
+- Referral traffic by discovery channel tracked where available.
+- Assisted conversions and landing-page conversion quality reviewed where analytics access exists.
+- Traffic velocity for new or refreshed content noted when baselines exist.
+- GEO probes use a stable, repeatable prompt set; results recorded with exact query, model, mode, date, and locale.
+- Share of Model (SoM) tracked per platform: brand mentions ÷ total tracked competitor mentions for the same query set.
+- GEO citation frequency, mention rate, competitor share of voice, context, sentiment, framing accuracy, and source diversity tracked separately from Google SEO.
+- AI-referred traffic tracked via GA4 attribution where available.
 - Prompt samples, platform coverage, volatility, and methodology limits are disclosed.
 
 ## Suggested Prioritization
 
-- **P0:** blocks crawling/indexing or splits canonical signals.
-- **P1:** materially weakens relevance, evidence, entity understanding, or discovery.
-- **P2:** improves appearance, CTR, rich results, and experience.
-- **P3:** expansion, experimentation, and long-term authority building.
+- **P0:** blocks crawling/indexing or splits canonical signals. Fix before anything else.
+- **P1:** materially weakens relevance, evidence, entity understanding, or rendering. Also includes Search Console setup and sitemap submission if not yet done — without these, ongoing diagnosis is blind.
+- **P2:** improves appearance, CTR, rich results, and page experience.
+- **P3:** multi-platform expansion, measurement iteration, AI visibility probes, and long-term authority building.

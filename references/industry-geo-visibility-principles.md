@@ -4,14 +4,20 @@ Use this reference for broader AI visibility strategy beyond Google-confirmed re
 
 ## Source and Evidence Status
 
-Primary article reviewed:
+Primary articles reviewed:
 
 - Search Engine Land, "Generative engine optimization (GEO): How to win AI mentions"
-- Author: Leigh McKenzie
-- Published: 2026-02-11
-- URL: https://searchengineland.com/what-is-generative-engine-optimization-geo-444418
+  - Author: Leigh McKenzie
+  - Published: 2026-02-11
+  - URL: https://searchengineland.com/what-is-generative-engine-optimization-geo-444418
+- Search Engine Land, "What Is SEO – Search Engine Optimization?"
+  - URL: https://searchengineland.com/guide/what-is-seo
+- Search Engine Land, "The future of SEO is now: Growth & visibility"
+  - URL: https://searchengineland.com/guide/future-of-seo
 
-Search Engine Land is owned by Semrush. The article combines useful strategic analysis, Semrush observations, examples, and product promotion. Verify important statistics against their original sources before repeating them.
+Search Engine Land is owned by Semrush. These articles combine useful strategic analysis, Semrush observations, examples, and product promotion. Verify important statistics against their original sources before repeating them.
+
+For the broader SEO-to-growth framework from these articles, read [seo-growth-visibility-principles.md](seo-growth-visibility-principles.md).
 
 ## Five-Principle Model
 
@@ -92,6 +98,8 @@ Track:
 - cited-source profile: domains and source types used in answers
 - source diversity: whether visibility depends on one unstable source
 - referral traffic and assisted conversion when observable
+- branded search demand and cross-channel referral lift when analytics access exists
+- traffic velocity for new or refreshed content when baselines exist
 
 Store the exact prompt, platform/model, date, locale, mode, response, rank/order, citations, and competitor mentions. Repeat the same prompt set over time because individual answers and cited sources can fluctuate.
 
@@ -118,7 +126,8 @@ For broad GEO strategy, organize recommendations into:
 3. Extractable first-party evidence
 4. Owned distribution
 5. Earned authority and reputation
-6. AI visibility measurement
+6. Multi-platform discovery and landing-page conversion
+7. AI visibility measurement
 
 Label each recommendation as:
 
