@@ -93,6 +93,18 @@ AI-assisted content is acceptable when accurate, useful, relevant, and reviewed.
 - Keep canonical tags, redirects, internal links, and sitemaps aligned.
 - Return real `404`/`410` statuses for missing content rather than soft-404 pages.
 
+### Pagination
+
+- Give each page in a paginated sequence a **unique URL** and a **self-referencing canonical**. Do not set page 1 as the canonical for the whole sequence.
+- Link pages sequentially with crawlable `<a href>` links; consider linking every page back to page 1.
+- Use distinct titles for paginated URLs; avoid identical titles across the sequence.
+- Do not rely on URL fragments (`#page=2`) as the only pagination state.
+- Indexed pagination is normal; later pages are often crawl paths to deeper items, not duplicate homepages.
+- Avoid legacy patterns that `noindex` all page-2+ URLs or block `/page/` in `robots.txt` unless there is a documented reason.
+- Treat filter/sort/facet parameter URLs separately from true pagination.
+
+See [pagination-seo-principles.md](pagination-seo-principles.md) for audit procedure and evidence labels.
+
 ## JavaScript
 
 Google can render JavaScript, but rendering is a separate queued stage. Keep critical content and links available in initial or server-rendered HTML when practical.

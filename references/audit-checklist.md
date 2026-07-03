@@ -32,6 +32,10 @@ Use this checklist after inspecting the implementation. Mark each item as confir
 - Anchor text is descriptive.
 - URL paths are stable and readable.
 - Pagination/infinite scroll has crawlable URL states if applicable.
+- Paginated list pages (`/page/2`, `?page=2`, etc.) each have a self-referencing canonical — not all canonicalized to page 1.
+- Paginated pages use unique titles (e.g. page-number suffix) where indexable.
+- Sequential pagination uses crawlable `<a href>` links; page 2+ is not blanket-`noindex` in a way that orphans deep list items.
+- Filter/sort parameter variants are handled separately from true pagination (`noindex`, `robots.txt`, or intentional canonical where duplicate).
 - Lazy-loaded content is testable and not interaction-only.
 - Mobile content has parity with desktop.
 - Status codes remain meaningful through framework routing.

@@ -11,6 +11,7 @@ The skill does not treat GEO as a separate ranking trick. For Google AI Overview
 - Audit using the SEO three-pillar model: on-page content, technical infrastructure, and off-page brand/authority
 - Trace failures to the correct search lifecycle stage — crawl → render → index → rank — before optimizing the wrong layer
 - Audit canonicals, redirects, robots directives, sitemaps, HTTP status codes, and indexing policy
+- Audit paginated list pages (`/page/2`, `?page=2`): self-referencing canonicals, crawlable pagination links, and avoid blanket `noindex` on page 2+ that orphans deep detail URLs
 - Inspect server rendering, JavaScript content, crawlable links, and initial HTML
 - Improve titles, descriptions, headings, internal links, Open Graph data, and structured data
 - Check entity consistency across company, product, audience, category, and external profiles
@@ -132,7 +133,7 @@ The following synthesizes two Search Engine Land guides: [What Is SEO](https://s
 
 **On-page essentials:** keyword clusters, unique titles/meta/headings/URLs, internal links, E-E-A-T (experience, expertise, authoritativeness, trustworthiness), multimedia, and up-to-date accuracy.
 
-**Technical essentials:** crawlable architecture, rendering visibility, canonical/noindex/sitemap management, Core Web Vitals, mobile parity, HTTPS, structured data that matches visible content.
+**Technical essentials:** crawlable architecture, rendering visibility, canonical/noindex/sitemap management, paginated list URL design (self-referencing canonicals per page, crawlable `<a href>` links, distinct titles; indexed pagination is normal and is not automatically self-cannibalization), Core Web Vitals, mobile parity, HTTPS, structured data that matches visible content.
 
 **Off-page essentials:** high-quality backlinks (quality over quantity), brand mentions and branded search demand, PR, content marketing, reviews, and directory accuracy.
 

@@ -45,7 +45,7 @@ Key elements:
 
 - logical site architecture and crawlable links
 - rendering visibility for important content and links
-- canonical, noindex, and sitemap management
+- canonical, noindex, sitemap, and pagination URL management (self-referencing canonical per page; crawlable sequential links)
 - Core Web Vitals, mobile parity, HTTPS, and structured data that matches visible content
 
 Technical SEO does not guarantee rankings, but weak technical foundations block even strong content.

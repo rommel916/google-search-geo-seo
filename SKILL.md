@@ -5,7 +5,7 @@ description: >
   web apps, documentation sites, and API references. Uses Google Search Central
   as the primary source plus labeled industry evidence from Search Engine Land
   and Semrush. Covers the full stack: technical foundations (crawl, render,
-  index, canonical, Core Web Vitals), on-page content and E-E-A-T, off-page
+  index, canonical, Core Web Vitals, paginated list pages), on-page content and E-E-A-T, off-page
   authority and backlinks, structured data, llms.txt, multi-platform discovery
   (Google, YouTube, Reddit, LinkedIn, TikTok, AI Overviews, ChatGPT,
   Perplexity), GEO measurement (AI citations, brand mentions, share of voice,
@@ -137,6 +137,7 @@ Prioritize:
    - redirects
    - sitemap correctness
    - accidental `noindex`
+   - paginated list URLs: self-referencing canonicals, crawlable next/previous links, and no blanket `noindex` on page 2+ that strands detail pages
    - renderability
    - Search Console property verified and sitemap submitted (without this, ongoing diagnosis is blind)
 
@@ -178,6 +179,7 @@ Prioritize:
 ### 4. Apply GEO Reasoning
 
 Read [google-search-central-principles.md](references/google-search-central-principles.md) when explaining or designing the strategy.
+Read [pagination-seo-principles.md](references/pagination-seo-principles.md) when auditing or implementing paginated archives, category lists, job boards, search results, blog indexes, or any `/page/2`-style URLs; clarify that indexed pagination is normal and is not automatically self-cannibalization when canonicals, titles, and crawl paths are correct.
 Read [seo-growth-visibility-principles.md](references/seo-growth-visibility-principles.md) when framing multi-channel discovery, audience-first planning, brand visibility, growth KPIs, or the shift from rankings-only thinking.
 Read [industry-geo-visibility-principles.md](references/industry-geo-visibility-principles.md) when the task includes broader AI platforms, content extractability, off-site brand presence, reputation, citations, mentions, or GEO measurement.
 Read [geo-research-principles.md](references/geo-research-principles.md) when optimizing content for AI citation: apply the three-level structural model, AI inverted pyramid, anchorable statements, passage isolation test, content freshness, AI crawler access, schema priority, SoM measurement, and AI Overviews keyword targeting.
@@ -225,6 +227,7 @@ Follow the repository's framework and established patterns. Keep changes scoped 
 Typical implementation surfaces:
 
 - canonical metadata
+- paginated list templates: per-page self-referencing canonicals, unique titles, crawlable `<a href>` pagination, and sitemap inclusion where indexable
 - domain redirects
 - metadata base
 - Open Graph URLs
